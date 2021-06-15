@@ -1,0 +1,6 @@
+#Autorise l'accès à tout les robots.
+User-agent: *
+#Autorise l'accès à tous les répertoires et pages du site.
+Disallow:
+#adresse du sitemap.
+Sitemap: http://www.adressedevotresite.com/sitemap_index.xml 
