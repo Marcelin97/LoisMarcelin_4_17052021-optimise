@@ -316,7 +316,7 @@ button:focus {
     line-height: 44px;
 }
 
-.navbar-brand img {
+.navbar-brand img { /*logo bannière*/
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
@@ -513,7 +513,7 @@ a[data-lightbox] {
     text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before {/*le bouton + sur l'image*/
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
@@ -541,7 +541,10 @@ a[data-lightbox]:hover img {
     display: flex;
     align-items: center;
 }
-
+.img-responsive {
+    width: 100%;
+    min-width: 200px;
+}
 #lightbox-modal .modal-dialog {
     width: 90%;
     max-width: 900px;
@@ -660,13 +663,16 @@ p {
     font-size: 16px;
     font-weight: 700;
 }
-
+.col-sm-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .social {
     max-width: 400px;
 }
-
 h2 {
-    font-size: 22px;
+    font-size: 1.5em !important;
     line-height: 1.4em;
 }
 
@@ -678,11 +684,14 @@ h3 {
     padding: 20px !important;
 }
 
-.med-width-whitespace {
+.med-width-whitespace1 {
     max-width: 800px;
     margin: auto;
 }
-
+.med-width-whitespace2 {
+    max-width: 800px;
+    margin: 40px auto;
+}
 h1 {
     color: #333333!important;
 }
@@ -791,6 +800,9 @@ h4 {
 .col-sm-4 li a{
     text-decoration: underline;
 }
+.col-sm-3 {
+    margin: 20px auto; 
+}
 
 .col-xs-12 {
     width: 80%;
@@ -798,8 +810,6 @@ h4 {
 }
 .citation {
     width: 100%;
-    border-radius: 5px;
-    padding: 15px;
     font-style: italic;
 }
 .citation figcaption {
@@ -817,6 +827,9 @@ blockquote p::after {
 blockquote p::after {
    content: "”";
    margin: -0.5rem -3rem 0 0;
+}
+p {
+    margin: 0 0 10px !important;
 }
 
 /*Media queries*/
