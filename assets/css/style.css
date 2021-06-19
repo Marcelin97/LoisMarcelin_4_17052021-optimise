@@ -24,9 +24,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-header a {
-    font-size:1.1em
-}
 a,
 button {
   outline: 0 !important;
@@ -299,7 +296,7 @@ button:focus {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size:3em;
 }
 
 .navbar {
@@ -310,7 +307,7 @@ button:focus {
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
@@ -340,7 +337,7 @@ button:focus {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 1.5em;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -452,12 +449,13 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 5em!important;
     padding: 10px;
+    margin: 15px;
 }
 
 .icon-lg {
-    font-size: 60px!important;
+    font-size: 6em!important;
 }
 
 .sm-shadow {
