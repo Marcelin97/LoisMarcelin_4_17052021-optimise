@@ -61,11 +61,11 @@ button:focus {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 40px;
 }
 
 .bloc-md {
-    padding: 50px;
+    padding: 40px;
 }
 
 .bloc-sm {
@@ -285,12 +285,11 @@ button:focus {
 }
 
 .voffset-lg {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .row-no-gutters {
-    margin-right: 0;
-    margin-left: 0;
+    margin: 20px auto 20px auto;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -317,7 +316,7 @@ button:focus {
     line-height: 44px;
 }
 
-.navbar-brand img {
+.navbar-brand img { /*logo bannière*/
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
@@ -417,7 +416,7 @@ nav .caret {
     margin-bottom: 20px;
 }
 
-.mg-lg {
+.mg-lg { /*paragraphe de la page contact*/
     margin-top: 10px;
     margin-bottom: 40px;
 }
@@ -514,7 +513,7 @@ a[data-lightbox] {
     text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before {/*le bouton + sur l'image*/
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
@@ -542,7 +541,10 @@ a[data-lightbox]:hover img {
     display: flex;
     align-items: center;
 }
-
+.img-responsive {
+    width: 100%;
+    min-width: 200px;
+}
 #lightbox-modal .modal-dialog {
     width: 90%;
     max-width: 900px;
@@ -661,14 +663,16 @@ p {
     font-size: 16px;
     font-weight: 700;
 }
-
+.col-sm-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
 }
-
 h2 {
-    font-size: 22px;
+    font-size: 1.5em !important;
     line-height: 1.4em;
 }
 
@@ -680,12 +684,14 @@ h3 {
     padding: 20px !important;
 }
 
-.med-width-whitespace {
+.med-width-whitespace1 {
     max-width: 800px;
-    margin: auto auto auto auto;
-    box-shadow: 0px 0px 0px #000000;
+    margin: auto;
 }
-
+.med-width-whitespace2 {
+    max-width: 800px;
+    margin: 40px auto;
+}
 h1 {
     color: #333333!important;
 }
@@ -722,7 +728,7 @@ h4 {
 }
 
 .bold-link {
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: underline;
 }
 
@@ -788,9 +794,47 @@ h4 {
 .bg-presentation {
     background-image: url("../img/image-de-presentation.bmp");
 }
+.col-sm-4 li {
+    margin-top: 20px;
+}
 .col-sm-4 li a{
     text-decoration: underline;
 }
+.col-sm-3 {
+    margin: 20px auto; 
+}
+.contact{
+    font-size: 1.5rem;
+}
+
+.col-xs-12 {
+    width: 80%;
+    margin-left: 10%;
+}
+.citation {
+    width: 100%;
+    font-style: italic;
+}
+.citation figcaption {
+    padding-top: 10px;
+}
+blockquote p::before,
+blockquote p::after {
+   content: "“";
+   font-size: 5rem;
+   margin: -1rem 0 0 -2.5rem;
+   position: absolute;
+   opacity: 0.5;
+}
+
+blockquote p::after {
+   content: "”";
+   margin: -0.5rem -3rem 0 0;
+}
+p {
+    margin: 0 0 10px !important;
+}
+
 /*Media queries*/
 
 @media (max-width: 400px) {
@@ -1032,6 +1076,10 @@ h4 {
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+    }
+    .col-xs-12 {
+        width: 50%;
+        margin-left: 25%;
     }
 }
 
