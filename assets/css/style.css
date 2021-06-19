@@ -416,7 +416,7 @@ nav .caret {
     margin-bottom: 20px;
 }
 
-.mg-lg {
+.mg-lg { /*paragraphe de la page contact*/
     margin-top: 10px;
     margin-bottom: 40px;
 }
@@ -728,7 +728,7 @@ h4 {
 }
 
 .bold-link {
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: underline;
 }
 
@@ -802,6 +802,9 @@ h4 {
 }
 .col-sm-3 {
     margin: 20px auto; 
+}
+.contact{
+    font-size: 1.5rem;
 }
 
 .col-xs-12 {
