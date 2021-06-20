@@ -69,12 +69,12 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
-<main class="page-container">
+<main class="page-container" role="main">
     
 <!-- bloc-0 -->
 <header class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
-		<nav class="navbar row">
+		<nav class="navbar row" role="navigation">
 			<div class="navbar-header">
 				<a class="navbar-brand" 
 					href="../index.html ">
@@ -99,11 +99,17 @@
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="../index.html">Accueil
+						<a 
+							href="../index.html"
+							aria-label="Retour sur la page d'accueil"
+						>Accueil
 						</a>
 					</li>
 					<li>
-						<a href="../pages/contact.html">Contact &gt;
+						<a 
+							href="../pages/contact.html"
+							aria-label="Naviguer vers la page contact"
+						>Contact &gt;
 						</a>
 					</li>
 				</ul>
@@ -141,7 +147,8 @@
 				>
 					<div class="form-group">
 						<label for="name">Nom</label>
-						<input 
+						<input
+							aria-required="true" 
 							id="name" 
 							class="form-control" 
 							required 
@@ -149,7 +156,8 @@
 					</div>
 					<div class="form-group">
 						<label for="email">Adresse email</label>
-						<input 
+						<input
+							aria-required="true" 
 							id="email" 
 							class="form-control" 
 							type="email" 
@@ -218,7 +226,8 @@
 <!-- ScrollToTop Button -->
 <a 
 	class="bloc-button btn btn-d scrollToTop" 
-	onclick="scrollToTarget('1')">
+	onclick="scrollToTarget('1')"
+	aria-label="Retour en haut de la page">
 	<span 
 		class="fa fa-chevron-up">
 	</span>
@@ -227,7 +236,7 @@
 
 
 <!-- Footer - bloc-8 -->
-<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8" role="contentinfo">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
@@ -238,6 +247,7 @@
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a 
+								aria-label="Le compte twitter de l'entreprise"
 								class="social icon-md" 
 								href="https://twitter.com">
 									<span 
@@ -249,6 +259,7 @@
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a 
+								aria-label="Le compte facebook de l'entreprise"							
 								class="social icon-md" 
 								href="https://fr-fr.facebook.com">
 									<span 
@@ -260,6 +271,7 @@
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a 
+								aria-label="Le compte dribbble de l'entreprise"
 								class="social icon-md" 
 								href="https://dribbble.com">
 									<span 
@@ -271,6 +283,7 @@
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a 
+								aria-label="le compte instagram de l'entreprise"
 								class="social icon-md" 
 								href="https://www.instagram.com">
 									<span 

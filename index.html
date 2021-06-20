@@ -67,19 +67,24 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
-<main class="page-container">
+<main class="page-container" role="main">
     
 <!-- bloc-0 -->
-<header class="bloc bgc-white container">
+<header class="bloc bgc-white container" role="banner">
 	<div class="container bloc-sm">
-		<nav class="navbar row">
+		<nav class="navbar row" role="navigation">
 			<div class="navbar-header">
 				<a 
 					class="navbar-brand" 
-					href="./index.html">
-					<img src="./assets/img/la-chouette-agence.png" 
-					alt="Le logo bannière de la chouette agence, entreprise de web design à Lyon." 
-					height="40" />
+					href="./index.html"
+					role="button"
+					aria-label="Retour sur la page d'accueil"
+					>
+						<img src="./assets/img/la-chouette-agence.png" 
+						alt="Le logo bannière de la chouette agence, entreprise de web design à Lyon." 
+						height="40"
+						aria-label="Le logo bannière" 
+						/>
 				</a>
 				<button 
 					id="nav-toggle" 
@@ -97,11 +102,17 @@
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="./index.html">Accueil
+						<a 
+							href="./index.html"
+							aria-label="Retour sur la page d'accueil"
+						>Accueil
 						</a>
 					</li>
 					<li>
-						<a href="./pages/contact.html">Contact &gt;
+						<a 
+							href="./pages/contact.html"
+							aria-label="Naviguer vers la page contact"
+						>Contact &gt;
 						</a>
 					</li>
 				</ul>
@@ -130,6 +141,7 @@
 						href="./pages/contact.html" 
 						class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" 
 						id="cta-hero"
+						aria-label="Naviguer vers la page contact"
 					>Contact</a>
 				</div>
 			</div>
@@ -222,7 +234,9 @@
 					qui seront facilement trouvable sur les moteurs de recherche.
 					<a 
 						class="ltc-white bold-link" 
-						href="./pages/contact.html">Contactez notre équipe
+						href="./pages/contact.html"
+						aria-label="Naviguer ver la page contact"
+					>Contactez notre équipe
 					</a>
 				</p>
 			</div>
@@ -346,7 +360,9 @@
 <!-- ScrollToTop Button -->
 <a 
 	class="bloc-button btn btn-d scrollToTop" 
-	onclick="scrollToTarget('1')">
+	onclick="scrollToTarget('1')"
+	aria-label="Retour en haut de la page"
+	>
 	<span 
 		class="fa fa-chevron-up">
 	</span>
@@ -354,7 +370,7 @@
 <!-- ScrollToTop Button END-->
 
 <!-- Footer - bloc-8 -->
-<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8" role="contentinfo">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
@@ -364,6 +380,7 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3 my-20">
 						<a 
+							aria-label="Le compte twitter de l'entreprise"
 							class="social icon-md" 
 							href="https://twitter.com">
 							<span class="fa fa-twitter"></span>
@@ -371,6 +388,7 @@
 					</div>
 					<div class="col-sm-3">
 						<a 
+							aria-label="Le compte facebook de l'entreprise"
 							class="social icon-md" 
 							href="https://fr-fr.facebook.com">
 							<span class="fa fa-facebook"></span>
@@ -378,6 +396,7 @@
 					</div>
 					<div class="col-sm-3">
 						<a 
+							aria-label="Le compte dribbble de l'enreprise"
 							class="social icon-md" 
 							href="https://dribbble.com">
 							<span class="fa fa-dribbble"></span>
@@ -385,6 +404,7 @@
 					</div>
 					<div class="col-sm-3">
 						<a 
+							aria-label="Le compte instagram de l'enreprise"
 							class="social icon-md" 
 							href="https://www.instagram.com">
 							<span class="fa fa-instagram"></span>
