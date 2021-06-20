@@ -447,11 +447,10 @@ button {
     text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
-
 .icon-md {
-    font-size: 5em!important;
-    padding: 10px;
-    margin: 15px;
+    font-size: 1.7em !important;
+    padding: 15px;
+    margin: 15px 0;
 }
 
 .icon-lg {
@@ -525,7 +524,7 @@ a[data-lightbox] {
 a[data-lightbox]:hover::before {/*le bouton + sur l'image*/
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-    font-size: 32px;
+    font-size: 2.5em;
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -578,7 +577,7 @@ a[data-lightbox]:hover img {
 
 .close-lightbox {
     color: #FFF;
-    font-size: 40px;
+    font-size: 2.5em;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -598,7 +597,7 @@ a[data-lightbox]:hover img {
 
 .next-lightbox,
 .prev-lightbox {
-    font-size: 40px;
+    font-size: 2.5em;
     color: rgba(255, 255, 255, .9);
     background: rgba(0, 0, 0, .5);
     transition: all .2s ease-in-out;
@@ -636,26 +635,8 @@ a[data-lightbox]:hover img {
     max-width: 1000px;
 }
 
-.hero-bloc-text {
-    font-size: 38px;
-}
-
-.hero-bloc-text-sub {
-    font-size: 36px;
-}
-
-.statement-bloc-text {
-    line-height: 26px;
-    font-style: italic;
-    font-size: 20px;
-    text-align: center;
-    font-weight: lighter;
-    max-width: 520px;
-    margin: auto auto auto auto;
-}
-
 p {
-    font-size: 11px;
+    font-size: 1.5em;
 }
 
 .tight-width-whitespace {
@@ -663,17 +644,12 @@ p {
     margin: auto auto auto auto;
 }
 
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
-}
-
 .cta-hero {
     margin-top: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    font-size: 1.3em;
     font-weight: 700;
 }
 .col-sm-12 {
@@ -690,11 +666,11 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 1em !important;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 700 !important;
     color: #333333!important;
-    padding: 20px !important;
+    padding: 10px !important;
 }
 
 .med-width-whitespace1 {
@@ -817,7 +793,7 @@ h4 {
     margin: 20px auto; 
 }
 .contact{
-    font-size: 1.5rem;
+    font-size: 1.2em;
 }
 
 .col-xs-12 {
@@ -834,7 +810,7 @@ h4 {
 blockquote p::before,
 blockquote p::after {
    content: "“";
-   font-size: 5rem;
+   font-size: 5em;
    margin: -1rem 0 0 -2.5rem;
    position: absolute;
    opacity: 0.5;
@@ -850,16 +826,15 @@ p {
 
 /*Media queries*/
 
-@media (max-width: 400px) {
+@media screen and (min-width: 577px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
     }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
+    .icon-md {
+        padding: 10px;
+        margin: 15px;
+        font-size: 3em !important;
     }
 }
 
@@ -947,6 +922,7 @@ p {
         float: left;
         margin-left: 10px;
     }
+    
     .bloc {
         padding-left: 0;
         padding-right: 0;
