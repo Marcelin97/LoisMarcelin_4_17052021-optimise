@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-	<link rel="canonical" href="http://user@lois.anthony-cecconato.fr/accessibilite.html"/>
+	<link rel="canonical" href="https://user@lois.anthony-cecconato.fr/accessibilite.html"/>
     <meta 
 		name="description" 
 		content="Page d'informations sur l'accessibilité 
@@ -64,8 +64,6 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSHFBHH"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-
-<main class="page-container" role="main">
     
 <!-- bloc-0 -->
 <header class="bloc bgc-white l-bloc " role="banner">
@@ -73,7 +71,10 @@
 		<nav class="navbar row" role="navigation">
 			<div class="navbar-header">
 				<a class="navbar-brand" 
-					href="../index.html ">
+					href="../index.html "
+                    role="button"
+                    aria-label="Retour sur la page d'accueil"
+                >
 						<img 
 						src="../assets/img/la-chouette-agence.png" 
 						alt="Le logo bannière de la chouette agence, entreprise de web design à Lyon." 
@@ -121,18 +122,33 @@
 	</div>
 </header>
 <!-- bloc-0 END -->
+<main class="page-container" aria-labelledby="main-title" role="main">
 
-<!-- bloc-6 -->
 <section class="bloc">
 	<div class="container bloc-lg">
 		<div class="row">
-				<h1 class="text-center">Aide à la navigation et accessibilité</h1>
+				<h1 class="text-center" id="main-title">Aide à la navigation et accessibilité</h1>
 		</div>
 	</div>
 </section>
-<!-- bloc-6 END -->
+<section>
+    <div>
+        <div>
+            <article>
+                <div>
+                    <div>
+                        <p>
+                            Le site web <a href="https://lois.anthony-cecconato.fr/">La chouette agence</a>
+                            a été developpé adns le but de rendre le contenu le plus accessible possible à tous les utilisateurs.
 
-
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+</main>
 <!-- ScrollToTop Button -->
 <a 
 	class="bloc-button btn btn-d scrollToTop" 
@@ -146,18 +162,18 @@
 
 
 <!-- Footer - bloc-8 -->
-<footer class="bloc bgc-atomic-tangerine d-bloc" role="contentinfo">
+<footer class="bloc bgc-atomic-tangerine d-bloc" role="contentinfo" aria-labelledby="footer-title">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<h3 class="text-center white">
+				<h3 class="text-center white" id="footer-title">
 					La chouette agence - Agence web basée à Lyon.<br>
 				</h3>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a 
-								aria-label="Le compte twitter de l'entreprise"
+								aria-label="Le compte twitter de l'entreprise (nouvel onglet)"
 								class="social icon-md" 
 								href="https://twitter.com">
 									<span 
@@ -169,7 +185,7 @@
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a 
-								aria-label="Le compte facebook de l'entreprise"							
+								aria-label="Le compte facebook de l'entreprise (nouvel onglet)"							
 								class="social icon-md" 
 								href="https://fr-fr.facebook.com">
 									<span 
@@ -181,7 +197,7 @@
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a 
-								aria-label="Le compte dribbble de l'entreprise"
+								aria-label="Le compte dribbble de l'entreprise (nouvel onglet)"
 								class="social icon-md" 
 								href="https://dribbble.com">
 									<span 
@@ -193,7 +209,7 @@
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a 
-								aria-label="le compte instagram de l'entreprise"
+								aria-label="le compte instagram de l'entreprise (nouvel onglet)"
 								class="social icon-md" 
 								href="https://www.instagram.com">
 									<span 
