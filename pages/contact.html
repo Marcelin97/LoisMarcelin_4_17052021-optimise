@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-	<link rel="canonical" href="http://user@lois.anthony-cecconato.fr/contact.html"/>
+	<link rel="canonical" href="https://user@lois.anthony-cecconato.fr/contact.html"/>
     <meta 
 		name="description" 
 		content="Contactez-nous sur cette page pour tous vos projets de web design. 
@@ -55,10 +55,6 @@
 	<script src="./assets/js/formHandler.js"></script>
 
     <title>Contacter La Chouette Agence - Agence de Web Design à Lyon.</title>
-
-<!-- Analytics -->
- 
-<!-- Analytics END -->
     
 </head>
 <body>
@@ -68,16 +64,18 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSHFBHH"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-
-<main class="page-container">
     
 <!-- bloc-0 -->
-<header class="bloc bgc-white l-bloc " id="bloc-0">
+<header class="bloc bgc-white l-bloc" role="banner">
 	<div class="container bloc-sm">
-		<nav class="navbar row">
+		<nav class="navbar row" role="navigation">
 			<div class="navbar-header">
 				<a class="navbar-brand" 
-					href="../index.html">
+					href="../index.html "
+					role="button"
+					aria-label="Retour sur la page d'accueil"
+					tabindex="0"
+				>
 						<img 
 						src="../assets/img/la-chouette-agence.png" 
 						alt="Le logo bannière de la chouette agence, entreprise de web design à Lyon." 
@@ -89,6 +87,7 @@
 					class="ui-navbar-toggle navbar-toggle" 
 					data-toggle="collapse" 
 					data-target=".navbar-1"
+					tabindex="0"
 				>
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -99,27 +98,50 @@
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="../index.html">Accueil
+						<a 
+							href="../index.html"
+							aria-label="Retour sur la page d'accueil"
+							accesskey="1"
+						>Accueil
 						</a>
 					</li>
 					<li>
-						<a href="../pages/contact.html">Contact &gt;
+						<a 
+							href="../pages/contact.html"
+							aria-label="Naviguer vers la page contact"
+							accesskey="2"
+						>Contact
+						</a>
+					</li>
+					<li>
+						<a 
+							href="../pages/accessibilite.html"
+							aria-label="Naviguer vers la page accessibilité"
+							accesskey="0"
+						>Accessibilité
 						</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</div>
+	<div class="container fil_ariane" id="breadcrumb">
+		Vous êtes ici :
+			<a href="/">Accueil</a> »
+				<span class="current_page">Contact</span>
+	</div>
 </header>
 <!-- bloc-0 END -->
 
+<main class="page-container" aria-labelledby="main-title" role="main">
+
 <!-- bloc-6 -->
-<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+<section class="bloc bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture" id="bloc-6">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text tc-white">Parlons web design !</h1>
-				<p class="text-center mg-lg tc-white">
+				<h1 class="text-center tc-black" id="main-title">Parlons web design !</h1>
+				<p class="text-center mg-lg tc-black">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 				</p>
@@ -130,7 +152,7 @@
 <!-- bloc-6 END -->
 
 <!-- bloc-7 -->
-<section class="bloc bgc-white l-bloc" id="bloc-7">
+<section class="bloc bgc-white l-bloc" id="bloc-7" aria-label="formulaire">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
@@ -140,33 +162,38 @@
 				fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
 				>
 					<div class="form-group">
-						<label>Nom</label>
-						<input 
+						<label for="name">Nom</label>
+						<input
+							aria-required="true" 
 							id="name" 
 							class="form-control" 
-							required 
+							required
+							tabindex="0" 
 						/>
 					</div>
 					<div class="form-group">
-						<label>Adresse email</label>
-						<input 
+						<label for="email">Adresse email</label>
+						<input
+							aria-required="true" 
 							id="email" 
 							class="form-control" 
 							type="email" 
-							required 
+							required
+							tabindex="0" 
 						/>
 					</div>
 					<div class="form-group">
-						<label>Comment nous avez-vous connu ?</label>
+						<label for="input_504">Comment nous avez-vous connu ?</label>
 						<input 
 							class="form-control" 
 							type="email" 
 							required 
-							id="input_504" 
+							id="input_504"
+							tabindex="0" 
 						/>
 					</div>
 					<div class="form-group">
-						<label>Brief de votre projet (Ajoutez autant de détails que nécessaire)<br></label>
+						<label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)<br></label>
 						<textarea 
 							id="message" 
 							class="form-control" 
@@ -178,13 +205,14 @@
 					<button 
 						class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" 
 						type="submit"
+						tabindex="0"
 					>Envoyer
 					</button>
 				</form>
 			</div>
 			<div class="col-sm-6 text-center">
 				<div>
-					<h3>Notre bureau</h3>
+					<h2>Notre bureau</h2>
 					<div>
 						<p class="contact">				
 							2 place Sathonay<br>
@@ -193,7 +221,7 @@
 					</div>
 				</div>
 				<div>
-					<h3>Coordonnées</h3>
+					<h2>Coordonnées</h2>
 					<div>
 						<p class="contact">
 							E-mail :
@@ -202,7 +230,7 @@
 					</div>
 				</div>
 				<div>
-					<h3>Horaires</h3>
+					<h2>Horaires</h2>
 					<div>
 						<p class="contact">
 							Ouvert de 9h à 18h,<br> du lundi au vendredi
@@ -218,26 +246,32 @@
 <!-- ScrollToTop Button -->
 <a 
 	class="bloc-button btn btn-d scrollToTop" 
-	onclick="scrollToTarget('1')">
+	onclick="scrollToTarget('1')"
+	aria-label="Retour en haut de la page"
+	tabindex="0"
+	accesskey="3"
+>
 	<span 
 		class="fa fa-chevron-up">
 	</span>
 </a>
 <!-- ScrollToTop Button END-->
 
+</main>
 
 <!-- Footer - bloc-8 -->
-<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8" role="contentinfo" aria-labelledby="footer-title">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<h3 class="text-center white">
+				<h2 class="text-center tc-black" id="footer-title">
 					La chouette agence - Agence web basée à Lyon.<br>
-				</h3>
+				</h2>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a 
+								aria-label="Le compte twitter de l'entreprise (nouvel onglet)"
 								class="social icon-md" 
 								href="https://twitter.com">
 									<span 
@@ -249,6 +283,7 @@
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a 
+								aria-label="Le compte facebook de l'entreprise (nouvel onglet)"							
 								class="social icon-md" 
 								href="https://fr-fr.facebook.com">
 									<span 
@@ -260,6 +295,7 @@
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a 
+								aria-label="Le compte dribbble de l'entreprise (nouvel onglet)"
 								class="social icon-md" 
 								href="https://dribbble.com">
 									<span 
@@ -271,6 +307,7 @@
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a 
+								aria-label="le compte instagram de l'entreprise (nouvel onglet)"
 								class="social icon-md" 
 								href="https://www.instagram.com">
 									<span 
@@ -284,11 +321,7 @@
 		</div>
 	</div>
 </footer>
-<!-- Footer - bloc-8 END -->
-
-</main>
-<!-- Principal conteneur END -->
-    
+<!-- Footer - bloc-8 END -->    
 
 </body>
 </html>
