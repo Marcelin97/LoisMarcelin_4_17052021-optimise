@@ -841,6 +841,9 @@ ul li {
     font-size: 1.5em;
     padding: 5px 0px;
 }
+.fil_ariane {
+    padding: 10px;
+}
 /*Media queries*/
 
 @media screen and (max-width: 577px) {
@@ -880,17 +883,7 @@ ul li {
         overflow-x: hidden;
         position: relative;
     }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
-    }
+
     .b-parallax {
         background-attachment: scroll;
     }
@@ -968,7 +961,7 @@ ul li {
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding: 20px 0;
     }
     .bloc-sm,
     .bloc-md {
@@ -1013,6 +1006,9 @@ ul li {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+    .fil_ariane {
+        padding: 10px 0px !important;
     }
 }
 @media (min-width: 768px) {
