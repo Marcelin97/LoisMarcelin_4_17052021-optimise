@@ -32,7 +32,7 @@
 	<meta property="og:title" content="La Chouette Agence - Agence de Web Design à Lyon"/>
 	<meta property="og:description" content="La chouette agence, une entreprise de web design à Lyon 
 	qui vous aide à créer votre site. Contactez-nous pour découvrir l'ensemble de nos services."/>
-	<meta property="og:image" content="https://marcelin97.github.io/LoisMarcelin_4_17052021-optimise/img/logo.png"/>
+	<meta property="og:image" content="https://marcelin97.github.io/LoisMarcelin_4_17052021-optimise/assets/img/logo.png"/>
 
 	<meta name="twitter:card" content="website" />
 	<meta name="twitter:site" content="@lachouetteagence" />
@@ -40,7 +40,7 @@
 	<meta name="twitter:title" content="La Chouette Agence - Agence de Web Design à Lyon" />
 	<meta name="twitter:description" content="La chouette agence, une entreprise de web design à Lyon 
 	qui vous aide à créer votre site. Contactez-nous pour découvrir l'ensemble de nos services." />
-	<meta name="twitter:image" content="https://marcelin97.github.io/LoisMarcelin_4_17052021-optimise/img/logo.png" />
+	<meta name="twitter:image" content="https://marcelin97.github.io/LoisMarcelin_4_17052021-optimise/assets/img/logo.png" />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style_mini.css">
@@ -48,12 +48,6 @@
 	<script src="https://use.fontawesome.com/537b33f252.js"></script>
 	<link rel="stylesheet" type="text/css" href="./assets/css/et-line_mini.css">
 	
-	<script src="https://code.jquery.com/jquery-2.1.0.min.js" integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0=" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="./assets/js/blocs_mini.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js" integrity="sha512-BNs09vwMdfabwyH36BehO8DJbV5S6RaO0vXqPqiMhYC8mZ4WsfwwPEVhMOl5D7gyrTSDDv98f3HgaOUDlFhywg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="./assets/js/gmaps_mini.js"></script>
-
     <title>La Chouette Agence - Agence de Web Design à Lyon.</title>
 
 </head>
@@ -64,7 +58,9 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSHFBHH"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-    
+
+<main class="page-container" aria-labelledby="main-title" role="main">
+
 <!-- bloc-0 -->
 <header class="bloc bgc-white container" role="banner">
 	<div class="container bloc-sm">
@@ -77,7 +73,7 @@
 					aria-label="Retour sur la page d'accueil"
 					tabindex="0"
 				>
-						<img src="./assets/img/la-chouette-agence.png" 
+						<img src="./assets/img/la-chouette-agence-386w.png" 
 						alt="Le logo bannière de la chouette agence,
 						entreprise de web design à Lyon." 
 						height="40"
@@ -135,8 +131,6 @@
 </header>
 <!-- bloc-0 END -->
 
-<main class="page-container" aria-labelledby="main-title" role="main">
-
 <!-- bloc-1-presentation -->
 <section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture b-parallax" id="bloc-1-hero">
 	<div class="container bloc-lg">
@@ -146,7 +140,8 @@
 					src="./assets/img/logo.png" 
 					class="center-block image-resize-mode" 
 					width="100" 
-					alt="Le logo de la chouette agence, entreprise de web design à Lyon." 
+					alt="Le logo de la chouette agence, entreprise de web design à Lyon."
+					loading="lazy" 
 				/>
 				<h1 class="text-center hero-bloc-text tc-black" id="main-title">
 					La chouette agence.
@@ -277,16 +272,17 @@
 			<article class="col-sm-6">
 				<a 
 					href="#" 
-					data-lightbox="/assets/img/Des-journaux-colorés.jpg" 
+					data-lightbox="./assets/img/Des-journaux-colorés-1003w.jpg" 
 					data-gallery-id="gallery-1" 
 					data-caption="Refonte d'un site web pour un journal local" 
 					data-frame="snapshot-lb"
 					aria-label="Lien vers la galerie des travaux de l'agence"
 				>
 						<img 
-							src="/assets/img/Des-journaux-colorés.jpg" 
+							src="./assets/img/Des-journaux-colorés-1003w.jpg" 
 							alt="Des journaux empilés avec plein de couleurs différentes." 
-							class="img-responsive portfolio-thumb" 
+							class="img-responsive portfolio-thumb"
+							loading="lazy" 
 						/>
 				</a>
 				<h3 class="mg-md text-center">Refonte d'un site web pour un journal local</h3>
@@ -297,16 +293,17 @@
 			<article class="col-sm-6">
 				<a 
 					href="#" 
-					data-lightbox="./assets/img/Photographe.jpg" 
+					data-lightbox="./assets/img/Photographe-628w.jpg" 
 					data-gallery-id="gallery-1" 
 					data-caption="Création d'un site web pour photographes" 
 					data-frame="snapshot-lb"
 					aria-label="Lien vers la galerie des travaux de l'agence"
 				>
 						<img 
-							src="./assets/img/Photographe.jpg" 
+							src="./assets/img/Photographe-628w.jpg" 
 							class="img-responsive portfolio-thumb" 
-							alt="Une photographe avec son appareil photo sur pied dans la lumière du soir." 
+							alt="Une photographe avec son appareil photo sur pied dans la lumière du soir."
+							loading="lazy" 
 						/>
 					</a>
 				<h3 class="mg-md text-center">
@@ -321,16 +318,18 @@
 			<article class="col-sm-6">
 				<a 
 					href="#" 
-					data-lightbox="./assets/img/Equipements-photographe.bmp" 
+					data-lightbox="./assets/img/Equipements-photographe-320w.jpg" 
 					data-gallery-id="gallery-1" 
 					data-caption="Création d'un site internet pour un voyageur" 
 					data-frame="snapshot-lb"
 					aria-label="Lien vers la galerie des travaux de l'agence"
 				>
 						<img 
-							src="./assets/img/Equipements-photographe.bmp" 
+							src="./assets/img/Equipements-photographe-320w.jpg" 
 							class="img-responsive portfolio-thumb" 
-							alt="Une table avec dessus un ordinateur portable gris, un drone blanc et plein d'accessoires pour accessoiriser son appareil photo."
+							alt="Une table avec dessus un ordinateur portable gris, 
+							un drone blanc et plein d'accessoires pour accessoiriser son appareil photo."
+							loading="lazy"
 						/>
 				</a>
 				<h3 class="mg-md text-center">Création d'un site internet pour un voyageur</h3>
@@ -341,16 +340,17 @@
 			<article class="col-sm-6">
 				<a 
 					href="#" 
-					data-lightbox="./assets/img/Papeteries-mariage.bmp" 
+					data-lightbox="./assets/img/Papeteries-mariage-320w.jpg" 
 					data-gallery-id="gallery-1" 
 					data-caption="Conception d'un site pour une agence de mariage" 
 					data-frame="snapshot-lb"
 					aria-label="Lien vers la galerie des travaux de l'agence"
 					>
 						<img 
-							src="./assets/img/Papeteries-mariage.bmp" 
+							src="./assets/img/Papeteries-mariage-320w.jpg" 
 							class="img-responsive portfolio-thumb" 
-							alt="Des mains sur un ordinateur, avec plein d'accessoires pour faire des faire-part de mariage." 
+							alt="Des mains sur un ordinateur, avec plein d'accessoires pour faire des faire-part de mariage."
+							loading="lazy" 
 						/>
 				</a>
 				<h3 class="mg-md text-center">Conception d'un site pour une agence de mariage</h3>
@@ -397,7 +397,7 @@
 	</span>
 </a>
 <!-- ScrollToTop Button END-->
-</main>
+
 <!-- Footer - bloc-8 -->
 <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8" role="contentinfo" aria-labelledby="footer-title">
 	<div class="container bloc-sm">
@@ -461,10 +461,15 @@
 	</div>
 </footer>
 <!-- Footer - bloc-8 END -->
+</main>
+<!-- Principal conteneur END -->    
 
-
-<!-- Principal conteneur END -->
-    
-
+<!--scripts-->
+<script src="https://code.jquery.com/jquery-2.1.0.min.js" integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0=" crossorigin="anonymous" defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" defer></script>
+<script src="./assets/js/blocs_mini.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js" integrity="sha512-BNs09vwMdfabwyH36BehO8DJbV5S6RaO0vXqPqiMhYC8mZ4WsfwwPEVhMOl5D7gyrTSDDv98f3HgaOUDlFhywg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="./assets/js/gmaps_mini.js" defer></script>
+<!--scipts-->
 </body>
 </html>
