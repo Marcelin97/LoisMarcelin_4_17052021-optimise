@@ -1,3 +1,4 @@
+#Protect Directory
 AuthName "Page d'administration protégée"
 AuthType Basic
 AuthUserFile "/.htpasswds"
@@ -30,11 +31,11 @@ satisfy all
 
 # Redirection de la version HTTP vers HTTPS
 
-<IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{SERVER_PORT} !^443$
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-</IfModule>
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+
 
 # REDIRIGER EN 301 SON NOM DE DOMAINE SANS WWW VERS LA VERSION AVEC LES WWW
 
