@@ -1,4 +1,4 @@
 AuthName "Page d'administration protégée"
 AuthType Basic
-AuthUserFile "\Users\Lois_\Documents\GitHub\LoisMarcelin_4_17052021-optimise\.htaccess"
+AuthUserFile "https://lois.anthony-cecconato.fr/.htaccess"
 Require valid-user
