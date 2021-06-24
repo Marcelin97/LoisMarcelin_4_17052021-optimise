@@ -37,3 +37,8 @@ RewriteEngine on
 RewriteBase /
 RewriteCond %{http_host} ^lois.anthony-cecconato.fr [nc]
 RewriteRule ^(.*)$ https://www.lois.anthony-cecconato.fr/$1 [r=301,nc]
+
+#desactiver-la-detection-automatique-du-type-de-ressources
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+</IfModule>
