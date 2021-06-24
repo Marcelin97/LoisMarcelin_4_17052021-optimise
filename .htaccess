@@ -1,9 +1,3 @@
-#Protect Directory
-AuthName "Page d'administration protégée"
-AuthType Basic
-AuthUserFile "/.htpasswds"
-Require valid-user
-
 # Désactiver l'affichage du contenu des répertoires
 Options All -Indexes
 
