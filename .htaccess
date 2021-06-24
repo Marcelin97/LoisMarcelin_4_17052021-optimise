@@ -1,4 +1,44 @@
 AuthName "Page d'administration protégée"
 AuthType Basic
-AuthUserFile "https://lois.anthony-cecconato.fr/.htaccess"
+AuthUserFile "/.htpasswds"
 Require valid-user
+
+# Désactiver l'affichage du contenu des répertoires
+Options All -Indexes
+
+# Alternative pour empêcher le listage des répertoires
+IndexIgnore *
+
+# Masquer les informations du serveur
+ServerSignature Off
+
+# Activation du suivi des liens symboliques, le serveur pourra suivre les raccourcis
+Options +FollowSymLinks
+
+# Choix du fuseau horaire
+SetEnv TZ Europe/Paris
+
+# Encodage par défaut des fichiers textes et HTML
+AddDefaultCharset UTF-8
+
+# Protéger les fichiers .htaccess et .htpasswds
+<Files ~ "^.*\.([Hh][Tt][AaPp])">
+order allow,deny
+deny from all
+satisfy all
+</Files>
+
+# Redirection de la version HTTP vers HTTPS
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# REDIRIGER EN 301 SON NOM DE DOMAINE SANS WWW VERS LA VERSION AVEC LES WWW
+
+RewriteEngine on
+RewriteBase /
+RewriteCond %{http_host} ^lois.anthony-cecconato.fr [nc]
+RewriteRule ^(.*)$ https://www.lois.anthony-cecconato.fr/$1 [r=301,nc]
