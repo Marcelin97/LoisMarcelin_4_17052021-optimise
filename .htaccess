@@ -60,4 +60,4 @@ Header always set X-Content-Type-Options "nosniff"
  ## EXPIRES CACHING ##
 
 # CSP
-Header set Content-Security-Policy "default-src 'self'; 'unsafe-inline'; 'unsafe-eval'; font-src 'self'; report-uri /_/csp-reports;"
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' www.google-analytics.com; 'unsafe-inline'; 'unsafe-eval'; font-src 'self'; report-uri /_/csp-reports;"
