@@ -58,3 +58,6 @@ Header always set X-Content-Type-Options "nosniff"
  ExpiresDefault "access plus 7 days"
  </IfModule>
  ## EXPIRES CACHING ##
+
+# CSP
+Header set Content-Security-Policy "default-src 'self'; 'unsafe-inline'; 'unsafe-eval'; font-src 'self'; report-uri /_/csp-reports;"
