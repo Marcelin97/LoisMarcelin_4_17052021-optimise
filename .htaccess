@@ -60,7 +60,7 @@ Header always set X-Content-Type-Options "nosniff"
  ## EXPIRES CACHING ##
 
 # CSP
-Header set Content-Security-Policy "default-src 'self'; script-src 'self' www.google-analytics.com; 'unsafe-inline'; 'unsafe-eval'; font-src 'self'; report-uri /_/csp-reports;"
+Header set Content-Security-Policy "default-src 'self' *.cloudflare.com *.bootstrapcdn.com *.jsdelivr.net *.cloudflare.com *.jquery.com *.googletagmanager.com *.fontawesome.com; font-src 'self' * *.fontawesome.com *.bootstrapcdn.com *.jquery.com; base-uri 'self';"
 
 #Clickjacking protection
 Header set X-Frame-Options SAMEORIGIN
