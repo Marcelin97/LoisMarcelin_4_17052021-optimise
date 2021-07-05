@@ -6,6 +6,9 @@
     font-style: normal
 }
 
+.et-icon-browser,
+.et-icon-presentation,
+.et-icon-edit,
 .et-icon-dribbble,
 .et-icon-facebook,
 .et-icon-twitter {
@@ -21,6 +24,15 @@
     display: inline-block
 }
 
+.et-icon-browser:before {
+    content: "\e00c"
+}
+.et-icon-presentation:before {
+    content: "\e00e"
+}
+.et-icon-edit:before {
+    content: "\e01c"
+}
 .et-icon-facebook:before {
     content: "\e05d"
 }
