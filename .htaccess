@@ -64,3 +64,20 @@ Header set Content-Security-Policy "default-src 'self' *.cloudflare.com *.bootst
 
 #Clickjacking protection
 Header set X-Frame-Options SAMEORIGIN
+
+#indique aux serveurs proxy situés entre le navigateur de l'internaute et votre serveur de stocker deux versions des pages : une version générée normalement et une version compressée. 
+<IfModule mod_headers.c>
+  <FilesMatch ".(js|css|xml|gz|html)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch ".(php)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch ".(jpeg|png)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>

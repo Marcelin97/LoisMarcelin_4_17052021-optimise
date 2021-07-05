@@ -104,7 +104,7 @@ button:focus {
 }
 
 .b-parallax {
-  background-attachment: fixed;
+  background-attachment:scroll;
 }
 
 .d-bloc {
@@ -319,8 +319,10 @@ button:focus {
 .navbar-brand img {
   /*logo bannière*/
   max-height: 200px;
+  max-width: 200px;
   margin: 0 5px 0 0;
   display: inline;
+  
 }
 
 .navbar-brand img[src$="svg"] {
@@ -638,7 +640,7 @@ a[data-lightbox]:focus img {
   background: none;
   text-align: center;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 0.8em;
 }
 
 .container {
@@ -847,10 +849,6 @@ ul li {
   padding: 10px;
 }
 
-.b-parallax {
-  background-attachment: scroll;
-}
-
 /*Media queries*/
 
 @media screen and (max-width: 577px) {
@@ -884,15 +882,16 @@ ul li {
     font-size: 1.2em !important;
   }
 }
-
+@media only screen and (max-width: 359px) {
+  .navbar-brand img {
+    position: absolute;
+    clip: rect(0px, 33px, 68px, 0px);
+  }
+} 
 @media (max-width: 767px) {
   .page-container {
     overflow-x: hidden;
     position: relative;
-  }
-
-  .b-parallax {
-    background-attachment: scroll;
   }
   .navbar .nav {
     padding-top: 0;
@@ -1017,8 +1016,13 @@ ul li {
   .fil_ariane {
     padding: 10px 0px !important;
   }
+
 }
 @media (min-width: 768px) {
+  .snapshot-lb .lightbox-caption {
+    /*le texte sous les images dans la lightbox*/
+    font-size: 1.5em;
+  }
   .site-navigation {
     position: absolute;
     top: 50%;
@@ -1072,9 +1076,6 @@ ul li {
 @media (max-width: 991px) {
   .container {
     width: 100%;
-  }
-  .b-parallax {
-    background-attachment: scroll;
   }
   .page-container,
   #hero-bloc {

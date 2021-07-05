@@ -4,19 +4,18 @@
     <meta charset="utf-8" />
     <link
       rel="canonical"
-      href="https://user@lois.anthony-cecconato.fr/index.html"
+      href="https://www.lois.anthony-cecconato.fr"
     />
     <meta
       name="description"
       content="La chouette agence, une entreprise de web design à Lyon 
-		qui vous aide à créer votre site. Contactez-nous pour découvrir l'ensemble de nos services."
+		  qui vous aide à créer votre site. Contactez-nous pour découvrir l'ensemble de nos services."
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
     <link rel="shortcut icon" type="image/png" href="./favicon.png" />
-
     <!-- Analytics -->
     <!-- Google Tag Manager -->
     <script>
@@ -39,7 +38,7 @@
 
     <meta
       property="og:url"
-      content="https://marcelin97.github.io/LoisMarcelin_4_17052021-optimise/"
+      content="https://www.lois.anthony-cecconato.fr"
     />
     <meta property="og:type" content="website" />
     <meta
@@ -49,11 +48,11 @@
     <meta
       property="og:description"
       content="La chouette agence, une entreprise de web design à Lyon 
-	qui vous aide à créer votre site. Contactez-nous pour découvrir l'ensemble de nos services."
+	    qui vous aide à créer votre site. Contactez-nous pour découvrir l'ensemble de nos services."
     />
     <meta
       property="og:image"
-      content="https://marcelin97.github.io/LoisMarcelin_4_17052021-optimise/assets/img/logo.png"
+      content="https://www.lois.anthony-cecconato.fr/assets/img/logo.png"
     />
 
     <meta name="twitter:card" content="website" />
@@ -66,17 +65,19 @@
     <meta
       name="twitter:description"
       content="La chouette agence, une entreprise de web design à Lyon 
-	qui vous aide à créer votre site. Contactez-nous pour découvrir l'ensemble de nos services."
+	    qui vous aide à créer votre site. Contactez-nous pour découvrir l'ensemble de nos services."
     />
     <meta
       name="twitter:image"
-      content="https://marcelin97.github.io/LoisMarcelin_4_17052021-optimise/assets/img/logo.png"
+      content="https://www.lois.anthony-cecconato.fr/assets/img/logo.png"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-    />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" 
+      integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" 
+      />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css" />
     <link rel="stylesheet" href="./assets/css/reset.min.css" />
     <script src="https://use.fontawesome.com/537b33f252.js"></script>
@@ -100,11 +101,12 @@
         height="0"
         width="0"
         style="display: none; visibility: hidden"
+        sandbox="allow-same-origin allow-forms"
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <main class="page-container" aria-labelledby="main-title">
+    <main class="page-container">
       <!-- bloc-0 -->
       <header class="bloc bgc-white container">
         <div class="container bloc-sm">
@@ -119,10 +121,9 @@
               >
                 <img
                   src="./assets/img/la-chouette-agence-386w.png"
-                  alt="Le logo bannière de la chouette agence,
-						entreprise de web design à Lyon."
-                  height="40"
+                  alt="Le logo bannière de la chouette agence,entreprise de web design à Lyon."
                   aria-label="Le logo bannière"
+                  loading="lazy"
                 />
               </a>
               <button
@@ -187,6 +188,7 @@
           bloc-bg-texture
           b-parallax
         "
+        aria-labelledby="main-title"
         id="bloc-1-hero"
       >
         <div class="container bloc-lg">
@@ -195,7 +197,8 @@
               <img
                 src="./assets/img/logo.png"
                 class="center-block image-resize-mode"
-                width="100"
+                width="150"
+                height="150"
                 alt="Le logo de la chouette agence, entreprise de web design à Lyon."
                 loading="lazy"
               />
@@ -223,7 +226,7 @@
       <!-- bloc-1-presentation END -->
 
       <!-- bloc-2-services -->
-      <section class="bloc bgc-white l-bloc" id="bloc-2-services">
+      <section class="bloc bgc-white l-bloc" id="bloc-2-services" aria-labelledby="servicesHeaderTitle">
         <div class="container bloc-md">
           <div class="row">
             <div class="col-sm-12 text-center">
@@ -297,10 +300,10 @@
               <figure class="citation text-center">
                 <blockquote>
                   <p>
-                    La chouette agence est une excellente agence ! Les web
+                    <q>La chouette agence est une excellente agence ! Les web
                     designers ont réussi à capturer l'essence de notre
                     entreprise et à l'intégrer à notre site. Cela nous a aidé à
-                    doubler nos ventes en ligne à Lyon.
+                    doubler nos ventes en ligne à Lyon.</q>
                   </p>
                 </blockquote>
                 <figcaption>
@@ -324,11 +327,12 @@
           b-parallax
         "
         id="bloc-3-what-i-do"
+        aria-labelledby="what-i-do"
       >
         <div class="container bloc-lg">
           <div class="row tight-width-whitespace bgc-white-opacity">
             <div class="col-sm-12">
-              <h2 class="mg-md text-center">
+              <h2 class="mg-md text-center" id="what-i-do">
                 Nous souhaitons aider les entreprises de la région Lyonnaise à
                 se développer et à connaître le succès. Nous travaillons pour
                 aider les entreprises locales à attirer de nouveaux clients.<br />
@@ -359,11 +363,12 @@
       <section
         class="bloc bgc-white l-bloc text-center my-40 b-parallax"
         id="bloc-4-portfolio"
+        aria-labelledby="Portfolio-Title"
       >
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-12 text-center">
-              <h2 class="col-sm-12 my-40" id="caseStudiesTitle">
+              <h2 class="col-sm-12 my-40" id="Portfolio-Title">
                 Nous travaillons avec beaucoup de clients,
                 <br />voici nos réalisations.
               </h2>
@@ -373,14 +378,14 @@
             <article class="col-sm-6">
               <a
                 href="#"
-                data-lightbox="./assets/img/Des-journaux-colorés-1003w.jpg"
+                data-lightbox="./assets/img/Des-journaux-colorés-320w.jpg"
                 data-gallery-id="gallery-1"
                 data-caption="Refonte d'un site web pour un journal local"
                 data-frame="snapshot-lb"
                 aria-label="Lien vers la galerie des travaux de l'agence"
               >
                 <img
-                  src="./assets/img/Des-journaux-colorés-1003w.jpg"
+                  src="./assets/img/Des-journaux-colorés-320w.jpg"
                   alt="Des journaux empilés avec plein de couleurs différentes."
                   class="img-responsive portfolio-thumb"
                   loading="lazy"
@@ -397,14 +402,14 @@
             <article class="col-sm-6">
               <a
                 href="#"
-                data-lightbox="./assets/img/Photographe-628w.jpg"
+                data-lightbox="./assets/img/Photographe-320w.jpg"
                 data-gallery-id="gallery-1"
                 data-caption="Création d'un site web pour photographes"
                 data-frame="snapshot-lb"
                 aria-label="Lien vers la galerie des travaux de l'agence"
               >
                 <img
-                  src="./assets/img/Photographe-628w.jpg"
+                  src="./assets/img/Photographe-320w.jpg"
                   class="img-responsive portfolio-thumb"
                   alt="Une photographe avec son appareil photo sur pied dans la lumière du soir."
                   loading="lazy"
@@ -433,7 +438,7 @@
                   src="./assets/img/Equipements-photographe-320w.jpg"
                   class="img-responsive portfolio-thumb"
                   alt="Une table avec dessus un ordinateur portable gris, 
-							un drone blanc et plein d'accessoires pour accessoiriser son appareil photo."
+							    un drone blanc et plein d'accessoires pour accessoiriser son appareil photo."
                   loading="lazy"
                 />
               </a>
@@ -479,10 +484,11 @@
       <section
         class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture b-parallax"
         id="bloc-5-cta"
+        aria-labelledby="contact-title"
       >
         <div class="container bloc-lg">
           <div class="row col-sm-12 bgc-white-opacity">
-            <h2 class="mg-md text-center tc-black">
+            <h2 class="mg-md text-center tc-black" id="contact-title">
               Prêt pour redonner vie à votre projet ?<br />Contactez notre
               équipe !
             </h2>
@@ -598,10 +604,15 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js" 
+      integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer"
       defer
     ></script>
+
     <script src="./assets/js/blocs.min.js" defer></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"
