@@ -1,0 +1,83 @@
+# Désactiver l'affichage du contenu des répertoires
+Options All -Indexes
+
+# Alternative pour empêcher le listage des répertoires
+IndexIgnore *
+
+# Masquer les informations du serveur
+ServerSignature Off
+
+# Activation du suivi des liens symboliques, le serveur pourra suivre les raccourcis
+Options +FollowSymLinks
+
+# Choix du fuseau horaire
+SetEnv TZ Europe/Paris
+
+# Encodage par défaut des fichiers textes et HTML
+AddDefaultCharset UTF-8
+
+# Protéger les fichiers .htaccess et .htpasswds
+<Files ~ "^.*\.([Hh][Tt][AaPp])">
+order allow,deny
+deny from all
+satisfy all
+</Files>
+
+# Redirection de la version HTTP vers HTTPS
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+
+
+# REDIRIGER EN 301 SON NOM DE DOMAINE SANS WWW VERS LA VERSION AVEC LES WWW
+
+RewriteEngine on
+RewriteBase /
+RewriteCond %{http_host} ^lois.anthony-cecconato.fr [nc]
+RewriteRule ^(.*)$ https://www.lois.anthony-cecconato.fr/$1 [r=301,nc]
+
+#Desactiver-la-detection-automatique-du-type-de-ressources
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+</IfModule>
+
+## EXPIRES CACHING ##
+ <IfModule mod_expires.c>
+ ExpiresActive On
+ ExpiresByType image/jpg "access plus 1 year"
+ ExpiresByType image/jpeg "access plus 1 year"
+ ExpiresByType image/gif "access plus 1 year"
+ ExpiresByType image/png "access plus 1 year"
+ ExpiresByType text/css "access plus 1 month"
+ ExpiresByType application/pdf "access plus 1 month"
+ ExpiresByType text/x-javascript "access plus 1 month"
+ ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ ExpiresByType image/x-icon "access plus 1 year"
+ ExpiresDefault "access plus 7 days"
+ </IfModule>
+ ## EXPIRES CACHING ##
+
+# CSP
+Header set Content-Security-Policy "default-src 'self' *.cloudflare.com *.bootstrapcdn.com *.jsdelivr.net *.cloudflare.com *.jquery.com *.googletagmanager.com *.fontawesome.com; font-src 'self' * *.fontawesome.com *.bootstrapcdn.com *.jquery.com; base-uri 'self';"
+
+#Clickjacking protection
+Header set X-Frame-Options SAMEORIGIN
+
+#indique aux serveurs proxy situés entre le navigateur de l'internaute et votre serveur de stocker deux versions des pages : une version générée normalement et une version compressée. 
+<IfModule mod_headers.c>
+  <FilesMatch ".(js|css|xml|gz|html)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch ".(php)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch ".(jpeg|png)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>

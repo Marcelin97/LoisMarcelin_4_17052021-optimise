@@ -1,0 +1,75 @@
+{
+  "short_name": "La chouette agence",
+  "name": "La Chouette Agence - Agence de Web Design à Lyon.",
+  "lang": "fr",
+  "description": "La chouette agence, une entreprise de web design à Lyon qui vous aide à créer votre site.",
+  "start_url": "https://user@lois.anthony-cecconato.fr/",
+  "background_color": "#f3976c",
+  "theme_color": "#f3976c",
+  "dir": "ltr",
+  "display": "fullscreen",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./assets/img/icons/logo-512w.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./assets/img/icons/logo-192w.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./assets/img/icons/logo-180w.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "./assets/img/icons/logo-152w.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "./assets/img/icons/logo-144w.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "./assets/img/icons/logo-120w.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "./assets/img/icons/logo-114w.png",
+      "type": "image/png",
+      "sizes": "114x114"
+    },
+    {
+      "src": "./assets/img/icons/logo-96w.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./assets/img/icons/logo-76w.png",
+      "type": "image/png",
+      "sizes": "76x76"
+    },
+    {
+      "src": "./assets/img/icons/logo-72w.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "./assets/img/icons/logo-60w.png",
+      "type": "image/png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "./assets/img/icons/logo-57w.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    }
+  ],
+  "prefer_related_applications": "false"
+}
