@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Start create a golden book with express and ejs</title>
+  <link rel="stylesheet" href="/assets/semantic/semantic.min.css">
+  <style>
+    .main.container {
+      margin-top: 3em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ui inverted segment">
+    <div class="ui inverted secondary menu">
+      <a href="http://" class="item active">Accueil</a>
+    </div>
+  </div>
+  <div class="ui main container">
+    <% if (locals.flash && locals.flash.error) { %>
+    <div class="ui negative message">
+      <%= flash.error %>
+    </div>
+    <% } %>
+    <% if (locals.flash && locals.flash.success) { %>
+    <div class="ui positive message">
+      <%= flash.success %>
+    </div>
+    <% } %>
