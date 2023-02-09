@@ -1,21 +1,21 @@
-// * création d'un middleware
+// * creation of a middleware for the management of the messages
 module.exports = function (req, res, next) {
-  // gestion si message flash dans ma session
+  // if my session picks up a message
   if (req.session.flash) {
-    // crée une variable local qui va s'appeler flash
+    // if I have a message I integrate it locally
     res.locals.flash = req.session.flash;
-    // après tu les supprimes
+    // once retrieved you set it to undefined
     req.session.flash = undefined;
   }
 
   req.flash = function (type, content) {
-    // gestion dans le cas ou mon objet flash n'existe pas
+    // management in case my flash object does not exist
     if (req.session.flash === undefined) {
       req.session.flash = {};
     }
-    // il stock dans la session le message
+    // store the message in the session
     // ex: req.session.flash.error
     req.session.flash[type] = content;
-  }
-  next()
+  };
+  next();
 };
