@@ -37,11 +37,6 @@ app.use(
 app.use(require("./middlewares/flash.js"));
 
 // * Routes
-app.get("/", (req, res) => {
-  console.log(req.session);
-  res.render("pages/index");
-});
-
 // requête depuis la page d'accueil
 // https://expressjs.com/en/5x/api.html#req.body
 app.post("/", (req, res) => {
@@ -58,12 +53,31 @@ app.post("/", (req, res) => {
     // Je crée une class message qui récupère le body de ma requete
     // comme c'est async, elle prend en seconde paramètre une fonction
     Message.create(req.body.message, function () {
-      req.flash("success", "Bravo pour ce message");
+      req.flash("success", "Merci pour ce message");
       // je mets ma redirect
       res.redirect("/");
     });
   }
 });
+
+// * Get all message
+app.get("/", (req, res) => {
+  let Message = require("./models/message.js");
+  // Je crée une méthode qui va récupérer tous les messages
+  Message.all(function (messages) {
+    // je rend la page une fois que j'ai les messages
+    res.render("pages/index", { messages: messages });
+  });
+});
+
+// * Get one message
+app.get("/message/:id", (req, res) => {
+  let Message = require('./models/message.js')
+  Message.find(req.params.id, function (message){
+    res.render('messages/show', {message: message})
+  })
+})
+
 
 // * Port
 app.listen(8080);

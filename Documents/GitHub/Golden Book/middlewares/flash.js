@@ -16,6 +16,6 @@ module.exports = function (req, res, next) {
     // il stock dans la session le message
     // ex: req.session.flash.error
     req.session.flash[type] = content;
-  };
-  next();
+  }
+  next()
 };
