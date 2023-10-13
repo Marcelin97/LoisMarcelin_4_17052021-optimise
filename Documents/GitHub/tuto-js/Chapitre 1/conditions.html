@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les conditions</title>
+    <script>
+      //   CHAPITRE 2 : LES CONDITIONS
+      const age = 18;
+      if (age >= 18) {
+        console.log("Vous êtes majeur");
+      }
+
+      // Les opérateurs logiques && et ||
+      // Dans le cas &&
+      // VRAI ET VRAI = VRAI
+      // VRAI ET FAUX = FAUX
+      // FAUX ET FAUX = FAUX
+
+      // Dans le cas ||
+      // VRAI OU FAUX = VRAI
+      // VRAI OU VRAI = VRAI
+      // FAUX OU FAUX = FAUX
+      const tonAge = 19;
+      const pays = "Fr";
+      if ((pays === "Fr" && tonAge >= 18) || (pays === "USA" && tonAge >= 16)) {
+        console.log("Vous avez le droit de conduire");
+      } else {
+        console.log("Vous n'avez pas le droit de conduire");
+      }
+
+      // l'inversion d'une condition avec !
+      const peutConduireFrance = pays === "Fr" && tonAge >= 18;
+      const peutConduireUsa = pays === "USA" && tonAge >= 16;
+      // j'inverse ma condition ligne 42
+      if ((pays !== "Fr" || tonAge >= 18) && (pays !== "USA" || tonAge >= 16)) {
+        console.log("Vous n'avez pas le droit de conduire");
+      }
+
+      // La 3eme manière de faire une condition avec le switch case
+      // entre parenthèse je mets la valeur que je veux vérifier
+      switch (pays) {
+        // case puis la valeur attendu
+        case "Fr":
+          // j'écris le code à exécuté si la valeur est bonne
+          console.log("Je suis en France");
+          // break signifie que je sors de la condition
+          break;
+        case "Usa":
+          console.log("Je suis aux USA");
+          break;
+        default:
+          console.log("Je suis dans un pays inconnu");
+          break;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

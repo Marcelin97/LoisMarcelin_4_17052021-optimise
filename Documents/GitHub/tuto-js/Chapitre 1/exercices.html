@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercices</title>
+    <script>
+      // Exercice 1
+      // service de streaming avec 3 films
+      // service de recommandation selon le film et l'age de la personne
+      const birthday = prompt("Quel est votre année de naissance ?");
+      const year = 2022;
+      const donneAge = year - birthday;
+
+      if (donneAge <= 13) {
+        console.log("Garfield");
+      } else if (donneAge < 18) {
+        console.log("Matrix");
+      } else {
+        console.log("Evil dead");
+      }
+
+      // Exercice 2
+      // demande à l'utilisateur 2 nombres, les multipliés ensemble et dire si le résultat est positif ou négatif
+      const a = prompt("Entrez un premier nombre");
+      const b = prompt("Entrez un second nombre");
+      const result = a * b;
+      let signe;
+
+      if (isNaN(result)) {
+        console.log("opération impossible");
+      } else {
+        if (result > 0) {
+          signe = "positif";
+        }
+        if (result < 0) {
+          signe = "négatif";
+        }
+        console.log(`${a}*${b}=${result} est ${signe}`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
